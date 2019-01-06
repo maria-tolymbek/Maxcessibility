@@ -1,0 +1,19 @@
+
+$w.onReady(function () {
+	//TODO: write your page related code here...
+
+});
+
+export function horizontalMenu1_mouseOut(event) {
+	//Add your code for this event here: 
+}
+
+export function text7_viewportEnter(event) {
+	//Add your code for this event here: 
+}
+
+
+
+export function text7_viewportLeave(event) {
+	//Add your code for this event here: 
+}
