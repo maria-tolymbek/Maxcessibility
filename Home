@@ -1,0 +1,25 @@
+// For full API documentation, including code examples, visit http://wix.to/94BuAAs
+// import {fetch} from 'wix-fetch';
+// import {getCryptoCurrencyInfo} from 'backend/serviceModule';
+// import 'backend/building-specs'
+import wixData from 'wix-data';
+
+$w.onReady(function() {
+
+});
+
+export function button1_click(event){
+wixData.query('building-specs').eq('title', $w('#buildingInput').value).find().then(results => {
+	console.log('res',results.items[0]);
+	$w('#result').text = "Building name: " + results.items[0].title + "\n" 
+	+ "Elevation: " + results.items[0].elevation + "\n" + "Wheelchair accessible?: " + results.items[0].accessibility;
+	});
+}
+
+export function buildingInput_keyPress(event) {
+	//Add your code for this event here: 
+}
+
+export function result_click(event) {
+	//Add your code for this event here: 
+}
